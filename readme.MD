@@ -1,7 +1,7 @@
-#H2 Purpose:
+## Purpose:
 
 Practicing Data Structures and Algorithms
 
-#H2 Test Results:
+## Test Results:
 
 `npm test`
