@@ -6,14 +6,6 @@ git:
   depth: 2
   quiet: true
 
-#Github branches to test:
-
-# blocklist
-# branches:
-#   except:
-#   - legacy
-
-# safelist
 branches:
   only:
     - master
