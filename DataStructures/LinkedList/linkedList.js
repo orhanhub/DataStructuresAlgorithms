@@ -92,5 +92,5 @@ class LinkedList {
   }
 }
 
-exports.LinkedList = LinkedList;
 exports.Node = Node;
+exports.LinkedList = LinkedList;
