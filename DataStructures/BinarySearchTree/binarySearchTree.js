@@ -1,5 +1,5 @@
 /**
- * A module for Binary Search Tree
+ * The module for Binary Search Tree
  * @module Binary Search Tree Module
  */
 
@@ -59,6 +59,28 @@ class BinarySearchTree {
         return this.insert(input, position.right);
       }
     }
+  }
+  //TODO: to be implemented
+  remove(input) {}
+  //TODO: to be implemented
+  find(input) {}
+
+  /**
+   * @return {Array} Sorted array of the tree in ascending order
+   */
+  inOrderTraversal() {
+    //Create a result array, which will be printed;
+    let result = [];
+    //Recursive function, reflecting the traverse order;
+    function LeftNodeRight(node) {
+      if (node) {
+        LeftNodeRight(node.left);
+        result.push(node.value);
+        LeftNodeRight(node.right);
+      }
+    }
+    LeftNodeRight(this.root);
+    return result;
   }
 }
 

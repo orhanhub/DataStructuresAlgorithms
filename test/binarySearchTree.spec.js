@@ -51,4 +51,19 @@ describe("Binary Search Tree tests", function() {
     expect(bst.root.value).to.equal(10);
     expect(bst.root.left.value).to.equal(5);
   });
+
+  it("can implement in-order traversal", function() {
+    var n20 = new Node(20);
+    var n15 = new Node(15);
+    var n25 = new Node(25);
+    var n16 = new Node(16);
+    var n8 = new Node(8);
+
+    bst.insert(n20);
+    bst.insert(n15);
+    bst.insert(n25);
+    bst.insert(n16);
+    bst.insert(n8);
+    expect(bst.inOrderTraversal()).to.deep.equal([8, 15, 16, 20, 25]);
+  });
 });
